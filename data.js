@@ -116,9 +116,29 @@ const PORTFOLIO = {
       year: "2025 – 2026",
       desc: "Offline bilingual Sri Lankan Sign Language (SLSL) teaching unit for primary classrooms using a Raspberry Pi 5 and a Unity 3D humanoid avatar. Trained a CNN-BiLSTM gesture recognition model on a custom 410-class dataset of 8,321 video samples. Offline speech & translation stack using MediaPipe Holistic, Vosk, and a local Sinhala–English dictionary. Total hardware BOM ~USD 242.",
       tech: ["Raspberry Pi 5", "Unity 3D", "CNN-BiLSTM", "MediaPipe", "Vosk", "Python"],
-      demoVideo: "",   // e.g. "media/signjoy-demo.mp4" or a YouTube link
-      files: "",       // e.g. "media/signjoy-files.zip"
-      link: ""         // e.g. "https://github.com/yourname/signjoy"
+      demoVideo: "media/signjoy-demo.mp4",
+      files: "",
+      link: ""
+    },
+    {
+      name: "Micro Mouse — Autonomous Maze Robot",
+      tag: "Robotics Project",
+      year: "2024",
+      desc: "Designed and built an ESP32-based autonomous Micro Mouse robot that navigates a maze track using an IR sensor array and a line-following control algorithm with PID tuning for smooth, high-speed tracking. Covered motor-driver control, sensor calibration, and real-time decision logic on the ESP32.",
+      tech: ["ESP32", "IR Sensor Array", "Line Following", "PID Control", "Motor Drivers", "C/C++"],
+      demoVideo: "media/micromouse-demo.mp4",
+      files: "",
+      link: ""
+    },
+    {
+      name: "Fire Detection & Alarm System",
+      tag: "IoT / Embedded Project",
+      year: "2024",
+      desc: "ESP32-based fire detection and alarm system that senses flame and smoke, triggers an audible alarm, and automatically activates an exhaust fan via a relay to clear smoke and reduce fire risk. Real-time sensor monitoring and control logic running on the ESP32.",
+      tech: ["ESP32", "Flame Sensor", "Smoke / Gas Sensor", "Buzzer Alarm", "Relay", "Exhaust Fan", "C/C++"],
+      demoVideo: "media/fire-detection-demo.mp4",
+      files: "",
+      link: ""
     },
     {
       name: "Real-Time Facial Recognition System",
@@ -132,7 +152,10 @@ const PORTFOLIO = {
       tag: "Academic Project",
       year: "2024 – 2025",
       desc: "Real-time animal detection for a peri-agricultural setting. Designed and integrated sensor modules, built a GSM-based remote alert system, developed the image-processing detection/classification pipeline, and handled circuit design and PCB layout for the control board.",
-      tech: ["Image Processing", "GSM", "Sensors", "PCB Design"]
+      tech: ["ESP32-CAM", "Image Processing", "GSM", "Servo", "Alarm", "PCB Design"],
+      demoVideo: "media/animal-detection-demo.mp4",
+      files: "",
+      link: ""
     },
     {
       name: "Trolley Bed with Adjustable Legs",

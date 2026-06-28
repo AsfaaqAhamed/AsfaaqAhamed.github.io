@@ -214,7 +214,7 @@ section{padding:100px 6vw;position:relative;max-width:1180px;margin:0 auto}
 .card::before{content:'';position:absolute;inset:0;border-radius:18px;padding:1.4px;
   background:linear-gradient(130deg,var(--gold-light),transparent 40%,transparent 60%,var(--gold));
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-  -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:.35s}
+  -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:.35s;pointer-events:none}
 .card:hover{transform:translateY(-8px);box-shadow:0 28px 60px rgba(20,50,110,.22)}
 .card:hover::before{opacity:1}
 
@@ -295,6 +295,19 @@ footer{text-align:center;padding:38px 6vw;color:var(--muted);font-size:.78rem;
   border-top:1px solid var(--border)}
 
 /* reveal w/ BIG pop (spring overshoot) */
+/* video popup */
+.vmodal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.vmodal.open{display:flex}
+.vmodal-backdrop{position:absolute;inset:0;background:rgba(2,4,10,.82);backdrop-filter:blur(6px)}
+.vmodal-box{position:relative;z-index:1;max-width:min(900px,92vw);width:auto;max-height:88vh;
+  animation:vpop .4s cubic-bezier(.34,1.6,.5,1)}
+@keyframes vpop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:none}}
+#vmodalVideo{display:block;max-width:100%;max-height:84vh;border-radius:14px;background:#000;
+  box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 1px var(--border)}
+.vmodal-close{position:absolute;top:-14px;right:-14px;width:40px;height:40px;border-radius:50%;
+  border:none;cursor:pointer;font-size:1.5rem;line-height:1;color:#fff;
+  background:linear-gradient(var(--blue),var(--blue-deep));box-shadow:var(--glow)}
+.vmodal-close:hover{transform:scale(1.1)}
 .reveal{opacity:0;transform:translateY(44px) scale(.9);transition:.8s cubic-bezier(.34,1.8,.5,1)}
 .reveal.show{opacity:1;transform:none}
 /* hover pop on cards */
@@ -459,6 +472,15 @@ footer{text-align:center;padding:38px 6vw;color:var(--muted);font-size:.78rem;
   <div>© <span id="year"></span> <span id="footer-name">Asfaaq Ahamed</span> · Edit <strong>data.js</strong> to update content</div>
 </footer>
 
+<!-- VIDEO POPUP -->
+<div id="videoModal" class="vmodal" aria-hidden="true">
+  <div class="vmodal-backdrop"></div>
+  <div class="vmodal-box">
+    <button class="vmodal-close" id="vmodalClose" aria-label="Close">×</button>
+    <video id="vmodalVideo" controls playsinline preload="metadata"></video>
+  </div>
+</div>
+
 <script src="data.js"></script>
 <script>
 const P = PORTFOLIO;
@@ -547,7 +569,7 @@ $('timeline').innerHTML = P.experience.map(e=>
 // projects (with optional demo / files / link buttons)
 $('projects-grid').innerHTML = P.projects.map(p=>{
   const a=[];
-  if(p.demoVideo) a.push(`<a class="proj-btn" href="${p.demoVideo}" target="_blank" rel="noopener">▶ Watch demo</a>`);
+  if(p.demoVideo) a.push(`<button type="button" class="proj-btn play-demo" data-src="${p.demoVideo}">▶ Watch demo</button>`);
   if(p.files) a.push(`<a class="proj-btn" href="${p.files}" download>⬇ Download files</a>`);
   if(p.link) a.push(`<a class="proj-btn" href="${p.link}" target="_blank" rel="noopener">↗ View</a>`);
   const actions = a.length?`<div class="proj-actions">${a.join('')}</div>`:'';
@@ -623,6 +645,19 @@ new IntersectionObserver(es=>{es.forEach(e=>{
 const menuBtn=$('menuBtn'),navLinks=$('navLinks');
 menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+/* ---------- VIDEO POPUP ---------- */
+(function(){
+  const modal=$('videoModal'), vid=$('vmodalVideo'), closeBtn=$('vmodalClose');
+  function open(src){ vid.src=src; modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); vid.play().catch(()=>{}); }
+  function close(){ vid.pause(); vid.removeAttribute('src'); vid.load(); modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); }
+  document.addEventListener('click', e=>{
+    const btn=e.target.closest('.play-demo');
+    if(btn){ e.preventDefault(); open(btn.dataset.src); return; }
+    if(e.target.closest('.vmodal-backdrop') || e.target.closest('#vmodalClose')) close();
+  });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape' && modal.classList.contains('open')) close(); });
+})();
 
 /* ---------- SCROLL SPY for vertical side-nav ---------- */
 (function(){
