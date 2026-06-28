@@ -183,28 +183,36 @@ const PORTFOLIO = {
   /* ---------- SKILLS (grouped) ---------- */
   skills: [
     {
-      group: "Machine Learning & Computer Vision",
-      items: ["CNN", "Bidirectional LSTM", "Transformers", "MediaPipe Holistic", "Image Processing", "Edge ML (Raspberry Pi 5)", "Flask Model Serving", "Vosk (Offline Speech)", "Dataset Preparation"]
+      group: "Machine Learning & AI",
+      items: ["CNN", "Bidirectional LSTM", "Transformers", "TensorFlow", "PyTorch", "Keras", "scikit-learn", "OpenCV", "MediaPipe Holistic", "NLTK", "spaCy", "Edge ML (Raspberry Pi 5)", "Vosk (Offline Speech)"]
     },
     {
       group: "Programming Languages",
-      items: ["Python", "C / C++", "Java", "JavaScript"]
+      items: ["Python", "C / C++", "Java", "JavaScript", "Dart", "LaTeX"]
+    },
+    {
+      group: "Data Science & Visualization",
+      items: ["Pandas", "NumPy", "SciPy", "Matplotlib", "Seaborn", "Jupyter Notebook", "Google Colab", "Power BI", "Chart.js"]
     },
     {
       group: "Embedded Systems & IoT",
       items: ["ESP32 (WROOM, S3, Supermini)", "ESP32-CAM", "Arduino IDE", "MPU6050", "SIM800L GSM", "RFID", "ThingsBoard", "MQTT", "Blynk", "Buck/Boost", "TP4056"]
     },
     {
-      group: "Simulation & Analysis",
-      items: ["MATLAB", "LTspice", "Multisim", "Proteus", "PSCAD", "COMSOL", "FluidSIM"]
+      group: "Simulation & Robotics",
+      items: ["MATLAB", "PSCAD", "LTspice", "Multisim", "Proteus", "PSIM", "COMSOL", "FluidSIM", "LADSIM", "Siemens Step7 PLC", "Gazebo", "RViz", "CoppeliaSim", "Blender"]
     },
     {
       group: "Design & CAD",
       items: ["AutoCAD Electrical", "KiCad (PCB)", "SolidWorks", "TinkerCAD", "QUARTUS II"]
     },
     {
+      group: "Databases & Tools",
+      items: ["SQL", "Firebase", "MongoDB", "Git / GitHub", "VS Code"]
+    },
+    {
       group: "Mobile & Web",
-      items: ["React", "React Native (Expo)", "Unity", "VS Code"]
+      items: ["React", "React Native (Expo)", "Unity"]
     }
   ],
 
@@ -243,7 +251,9 @@ const PORTFOLIO = {
     "Member — IEEE Student Branch of SLIIT (2022 – Present)",
     "Member — Rotaract Club of SLIIT (2023 – 2025)",
     "Member — Gavel Club of SLIIT (2025 – 2026)",
-    "Member — Leo Club of SLIIT (2022 – 2025)"
+    "Member — Leo Club of SLIIT (2022 – 2025)",
+    "Cadet Team Commander — Addalaichenai National School (2017)",
+    "Provincial Meet, Relay — Eastern Province (2018)"
   ],
 
   /* ---------- LANGUAGES ---------- */

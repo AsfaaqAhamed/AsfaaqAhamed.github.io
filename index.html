@@ -488,10 +488,14 @@ const $ = id => document.getElementById(id);
 
 /* logo lookup for chips (simple-icons slugs) */
 const LOGO_MAP = {
-  'python':'python','c / c++':'cplusplus','c++':'cplusplus','java':'openjdk','javascript':'javascript',
+  'python':'python','c / c++':'cplusplus','c++':'cplusplus','javascript':'javascript','java':'openjdk',
   'react native':'react','react':'react','arduino':'arduino','esp32':'espressif','esp32-cam':'espressif',
   'mqtt':'mqtt','mongodb':'mongodb','unity':'unity','kicad':'kicad','flask':'flask','expo':'expo',
-  'vs code':'visualstudiocode','autocad':'autodesk','tinkercad':'autodesk','thingsboard':'','matlab':''
+  'vs code':'visualstudiocode','autocad':'autodesk','tinkercad':'autodesk',
+  'tensorflow':'tensorflow','pytorch':'pytorch','keras':'keras','scikit-learn':'scikitlearn','opencv':'opencv',
+  'pandas':'pandas','numpy':'numpy','scipy':'scipy','jupyter':'jupyter','google colab':'googlecolab',
+  'power bi':'powerbi','chart.js':'chartdotjs','dart':'dart','github':'github','firebase':'firebase',
+  'blender':'blender','plotly':'plotly','spacy':'spacy','sql':'mysql'
 };
 function logoFor(text){
   const t=text.toLowerCase();
