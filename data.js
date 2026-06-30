@@ -24,7 +24,7 @@ const PORTFOLIO = {
     location: "Addalaichenai, Sri Lanka",
     email: "asfaaq.jaafir@gmail.com",
     phone: "+94 77 429 2439",
-    linkedin: "https://www.linkedin.com/in/asfaaq-ahamed",
+    linkedin: "https://www.linkedin.com/in/asfaaqahamed",
     github: "", // add your GitHub URL here, e.g. "https://github.com/yourname"
     // Put your photo named "profile.jpg" in the SAME folder as index.html.
     // Until then a clean monogram is shown automatically.
