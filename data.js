@@ -237,9 +237,9 @@ const PORTFOLIO = {
 
   /* ---------- CERTIFICATIONS ---------- */
   certifications: [
-    { name: "Foundations of Project Management", by: "University of Moratuwa", year: "Aug 2025" },
-    { name: "AI/ML Engineer — Stage 1 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Aug 2025" },
-    { name: "AI/ML Engineer — Stage 2 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Aug 2025" }
+    { name: "Foundations of Project Management", by: "University of Moratuwa (CODL)", year: "2025", file: "certs/Foundations_of_Project_Management.pdf" },
+    { name: "AI/ML Engineer — Stage 1 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Oct 2025", file: "certs/AIML_Engineer_Stage1.pdf" },
+    { name: "AI/ML Engineer — Stage 2 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Aug 2025", file: "certs/AIML_Engineer_Stage2.pdf" }
   ],
 
   /* ---------- CO-CURRICULAR / LEADERSHIP ---------- */

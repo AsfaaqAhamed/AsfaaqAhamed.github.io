@@ -273,6 +273,8 @@ section{padding:100px 6vw;position:relative;max-width:1180px;margin:0 auto}
 .mini .t{font-family:'Bricolage Grotesque';font-weight:600;font-size:.92rem}
 .mini .s{color:var(--gold-deep);font-size:.8rem;margin:2px 0}
 .mini .p{color:var(--muted);font-size:.74rem}
+.cert-link{display:inline-block;margin-top:6px;font-size:.74rem;font-weight:600;color:var(--gold-deep);text-decoration:none;border-bottom:1px solid var(--gold-light)}
+.cert-link:hover{color:var(--gold);border-color:var(--gold)}
 
 .act-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .act{display:flex;gap:11px;align-items:flex-start;background:var(--panel);
@@ -593,7 +595,7 @@ $('skills-grid').innerHTML = P.skills.map(s=>{
 $('edu').innerHTML = P.education.map(e=>
   `<div class="mini"><div class="t">${e.degree}</div><div class="s">${e.school}</div><div class="p">${e.period}</div></div>`).join('');
 $('certs').innerHTML = P.certifications.map(c=>
-  `<div class="mini"><div class="t">${c.name}</div><div class="s">${c.by}</div><div class="p">${c.year}</div></div>`).join('');
+  `<div class="mini"><div class="t">${c.name}</div><div class="s">${c.by}</div><div class="p">${c.year}</div>${c.file?`<a class="cert-link" href="${c.file}" target="_blank" rel="noopener">View Certificate ↗</a>`:''}</div>`).join('');
 $('activities').innerHTML = P.activities.map(a=>
   `<div class="act reveal"><span class="i">◆</span><span>${a}</span></div>`).join('');
 
