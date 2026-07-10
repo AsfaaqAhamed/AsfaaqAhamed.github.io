@@ -32,10 +32,10 @@ const PORTFOLIO = {
   },
 
   /* ---------- ABOUT (short version, shown on the page) ---------- */
-  aboutShort: "Electrical & Electronic Engineer specializing in embedded systems, IoT, and applied AI. I design intelligent hardware — from edge-ML devices on the Raspberry Pi 5 to ESP32 IoT systems — with hands-on R&D experience at SLT Digital Lab and exposure to aviation infrastructure at Bandaranaike International Airport. Driven by practical engineering with measurable, real-world impact.",
+  aboutShort: "I'm an Electrical & Electronic Engineer who builds things at the hardware-software boundary. My final-year project, SignJoy, is a sign language teaching device that runs completely offline on a Raspberry Pi 5, built for Sri Lankan classrooms with no reliable internet. Before that I was at SLT Digital Lab building IoT systems, and at Bandaranaike Airport learning how navigation and communications infrastructure actually holds together. I'm most interested in problems where the hardware and software have to solve something real.",
 
   /* ---------- ABOUT (full version, kept for reference / longer use) ---------- */
-  about: "Electrical and Electronic Engineer with hands-on experience in embedded systems, IoT development, and aviation infrastructure. My final-year project, SignJoy, is an offline bilingual sign-language teaching unit for Sri Lankan primary classrooms built on a Raspberry Pi 5 with a Unity 3D avatar and a CNN-BiLSTM gesture recognition model trained on a custom 410-class dataset. My industrial training spans SLT Digital Lab — where I built ESP32-based monitoring devices, a self-balancing robot, and a React Native control app — and Bandaranaike International Airport, where I gained exposure to navigational aids, surveillance systems, and large-scale power distribution. I am motivated by practical engineering challenges with measurable real-world impact, and committed to growing my expertise across embedded design, automation, and applied AI.",
+  about: "Electrical and Electronic Engineer with hands-on experience in embedded systems, IoT development, and aviation infrastructure. My final-year project, SignJoy, is an offline bilingual sign-language teaching unit for Sri Lankan primary classrooms built on a Raspberry Pi 5 with a Unity 3D avatar and a CNN-BiLSTM gesture recognition model trained on a custom 410-class dataset. My industrial training spans SLT Digital Lab, where I built ESP32-based monitoring devices, a self-balancing robot, and a React Native control app, and Bandaranaike International Airport, where I gained exposure to navigational aids, surveillance systems, and large-scale power distribution. I am motivated by practical engineering challenges with measurable real-world impact, and committed to growing my expertise across embedded design, automation, and applied AI.",
 
   /* ---------- TECH LOGO STRIP (scrolling logos in hero) ----------
      Logos load from cdn.simpleicons.org. To add one, copy a line and
@@ -69,18 +69,18 @@ const PORTFOLIO = {
   /* ---------- EXPERIENCE ---------- */
   experience: [
     {
-      role: "Industrial Trainee — Research & Development",
+      role: "Industrial Trainee, Research & Development",
       org: "SLT Digital Lab, Sri Lanka Telecom PLC, Colombo",
       period: "Jun 2025 – Sep 2025 (12 weeks)",
       points: [
-        "Designed and deployed IoT systems including a copper-line anti-theft monitor (ESP32, GSM, optocoupler array) with SMS alerting, and a self-balancing robot with real-time video streaming and voice-command control.",
-        "Developed a React Native mobile application for robot control, replacing a Blynk-based interface.",
-        "Prototyped an RFID attendance system integrated with Google Sheets; diagnosed and refurbished eight smart power-monitoring devices for field deployment.",
-        "Researched edge computing, 5G architecture (CU/DU/RU), MEC, and vector database concepts."
+        "Built an ESP32 + GSM copper-line anti-theft monitor with SMS alerting and optocoupler isolation, and a self-balancing robot with live video streaming and voice-command control.",
+        "Wrote a React Native app to replace a Blynk interface for the robot, with cleaner UX and direct socket control.",
+        "Prototyped an RFID attendance system that writes to Google Sheets; also diagnosed and refurbished eight smart power-monitoring units before they went back out to field sites.",
+        "Dug into edge computing, 5G (CU/DU/RU split), MEC, and vector databases as part of the lab's broader R&D."
       ]
     },
     {
-      role: "Industrial Trainee — Electrical, Electronic & Air Navigation Engineering",
+      role: "Industrial Trainee, Electrical, Electronic & Air Navigation Engineering",
       org: "Bandaranaike International Airport, Katunayake",
       period: "Jul 2024 – Sep 2024",
       points: [
@@ -95,8 +95,8 @@ const PORTFOLIO = {
       org: "ESTEX (Private Limited) Engineering",
       period: "Mar 2022 – Oct 2022",
       points: [
-        "Technical drawing and design of engineering layouts.",
-        "Documentation of engineering plans and project deliverables."
+        "Created AutoCAD engineering layout drawings for drainage and civil infrastructure projects.",
+        "Maintained project documentation and supported coordination between design and field teams."
       ]
     }
   ],
@@ -111,7 +111,7 @@ const PORTFOLIO = {
      Leave them out or set "" and no button shows. */
   projects: [
     {
-      name: "SignJoy — Sign Language Teaching Tool",
+      name: "SignJoy: Sign Language Teaching Tool",
       tag: "Final Year Project",
       year: "2025 – 2026",
       desc: "Offline bilingual Sri Lankan Sign Language (SLSL) teaching unit for primary classrooms using a Raspberry Pi 5 and a Unity 3D humanoid avatar. Trained a CNN-BiLSTM gesture recognition model on a custom 410-class dataset of 8,321 video samples. Offline speech & translation stack using MediaPipe Holistic, Vosk, and a local Sinhala–English dictionary. Total hardware BOM ~USD 242.",
@@ -121,10 +121,10 @@ const PORTFOLIO = {
       link: ""
     },
     {
-      name: "Micro Mouse — Autonomous Maze Robot",
+      name: "Micro Mouse: Autonomous Maze Robot",
       tag: "Robotics Project",
       year: "2024",
-      desc: "Designed and built an ESP32-based autonomous Micro Mouse robot that navigates a maze track using an IR sensor array and a line-following control algorithm with PID tuning for smooth, high-speed tracking. Covered motor-driver control, sensor calibration, and real-time decision logic on the ESP32.",
+      desc: "An ESP32 line-follower that races through a maze. The hard part was PID tuning: getting smooth, fast cornering without the robot overshooting or stalling at junctions. All control logic, sensor calibration, and motor driving runs on the ESP32 in C/C++.",
       tech: ["ESP32", "IR Sensor Array", "Line Following", "PID Control", "Motor Drivers", "C/C++"],
       demoVideo: "media/micromouse-demo.mp4",
       files: "",
@@ -134,7 +134,7 @@ const PORTFOLIO = {
       name: "Fire Detection & Alarm System",
       tag: "IoT / Embedded Project",
       year: "2024",
-      desc: "ESP32-based fire detection and alarm system that senses flame and smoke, triggers an audible alarm, and automatically activates an exhaust fan via a relay to clear smoke and reduce fire risk. Real-time sensor monitoring and control logic running on the ESP32.",
+      desc: "When the flame or smoke sensor trips, the system immediately sounds an alarm and switches on an exhaust fan via relay, no manual intervention needed. Detection, alerting, and fan control all run on a single ESP32.",
       tech: ["ESP32", "Flame Sensor", "Smoke / Gas Sensor", "Buzzer Alarm", "Relay", "Exhaust Fan", "C/C++"],
       demoVideo: "media/fire-detection-demo.mp4",
       files: "",
@@ -144,14 +144,14 @@ const PORTFOLIO = {
       name: "Real-Time Facial Recognition System",
       tag: "Research @ SLT",
       year: "2025",
-      desc: "Facial recognition pipeline using DeepFace with a MongoDB Atlas vector database. Implemented vector search + K-NN, edge-device connectivity, embedding pipeline refinement, real-video-data testing, and end-to-end synchronization and performance tuning.",
+      desc: "Built a facial recognition pipeline with DeepFace backed by MongoDB Atlas vector search. Most of the work was on the embedding pipeline and getting K-NN retrieval accurate enough on real (messy) video footage, not just clean test images.",
       tech: ["DeepFace", "MongoDB Atlas", "Vector DB", "K-NN", "Python"]
     },
     {
       name: "Animal Detection & Control System",
       tag: "Academic Project",
       year: "2024 – 2025",
-      desc: "Real-time animal detection for a peri-agricultural setting. Designed and integrated sensor modules, built a GSM-based remote alert system, developed the image-processing detection/classification pipeline, and handled circuit design and PCB layout for the control board.",
+      desc: "A system for detecting animals encroaching on farmland. It fires a GSM alert to the farmer and triggers deterrents automatically. I handled the image processing pipeline, GSM alerting, circuit design, and PCB layout for the control board.",
       tech: ["ESP32-CAM", "Image Processing", "GSM", "Servo", "Alarm", "PCB Design"],
       demoVideo: "media/animal-detection-demo.mp4",
       files: "",
@@ -161,7 +161,7 @@ const PORTFOLIO = {
       name: "Trolley Bed with Adjustable Legs",
       tag: "Design Project",
       year: "2023",
-      desc: "Prototyped a hospital-style trolley bed with height-adjustable legs and an integrated medical-equipment holder. Owned design iterations, fabrication coordination, and end-to-end project management across mechanical, electrical, and assembly tasks.",
+      desc: "Prototyped a hospital trolley bed with height-adjustable legs and a built-in equipment holder. I ran the project from initial sketches through fabrication, coordinating the mechanical and electrical sides and managing everything to delivery.",
       tech: ["Mechanical Design", "Prototyping", "Project Management"]
     }
   ],
@@ -224,22 +224,22 @@ const PORTFOLIO = {
   /* ---------- CERTIFICATIONS ---------- */
   certifications: [
     { name: "Foundations of Project Management", by: "University of Moratuwa (CODL)", year: "2025", file: "certs/Foundations_of_Project_Management.pdf" },
-    { name: "AI/ML Engineer — Stage 1 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Oct 2025", file: "certs/AIML_Engineer_Stage1.pdf" },
-    { name: "AI/ML Engineer — Stage 2 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Aug 2025", file: "certs/AIML_Engineer_Stage2.pdf" }
+    { name: "AI/ML Engineer Stage 1 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Oct 2025", file: "certs/AIML_Engineer_Stage1.pdf" },
+    { name: "AI/ML Engineer Stage 2 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Aug 2025", file: "certs/AIML_Engineer_Stage2.pdf" }
   ],
 
   /* ---------- CO-CURRICULAR / LEADERSHIP ---------- */
   activities: [
-    "President — Science Association Addalaichenai (2025 – Present)",
-    "Assistant Treasurer — Undergraduate Association Addalaichenai (2024 – 2025)",
-    "Planning Coordinator — Science Association Addalaichenai (2024 – 2025)",
-    "Event Coordinator — Majlis of SLIIT (2023 – 2024)",
-    "Member — IEEE Student Branch of SLIIT (2022 – Present)",
-    "Member — Rotaract Club of SLIIT (2023 – 2025)",
-    "Member — Gavel Club of SLIIT (2025 – 2026)",
-    "Member — Leo Club of SLIIT (2022 – 2025)",
-    "Cadet Team Commander — Addalaichenai National School (2017)",
-    "Provincial Meet, Relay — Eastern Province (2018)"
+    "President, Science Association Addalaichenai (2025 – Present)",
+    "Assistant Treasurer, Undergraduate Association Addalaichenai (2024 – 2025)",
+    "Planning Coordinator, Science Association Addalaichenai (2024 – 2025)",
+    "Event Coordinator, Majlis of SLIIT (2023 – 2024)",
+    "Member, IEEE Student Branch of SLIIT (2022 – Present)",
+    "Member, Rotaract Club of SLIIT (2023 – 2025)",
+    "Member, Gavel Club of SLIIT (2025 – 2026)",
+    "Member, Leo Club of SLIIT (2022 – 2025)",
+    "Cadet Team Commander, Addalaichenai National School (2017)",
+    "Provincial Meet, Relay, Eastern Province (2018)"
   ],
 
   /* ---------- LANGUAGES ---------- */
