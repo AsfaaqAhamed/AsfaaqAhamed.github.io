@@ -163,20 +163,6 @@ const PORTFOLIO = {
       year: "2023",
       desc: "Prototyped a hospital-style trolley bed with height-adjustable legs and an integrated medical-equipment holder. Owned design iterations, fabrication coordination, and end-to-end project management across mechanical, electrical, and assembly tasks.",
       tech: ["Mechanical Design", "Prototyping", "Project Management"]
-    },
-    {
-      name: "DC Converter Design",
-      tag: "Power Electronics",
-      year: "2023",
-      desc: "Designed, simulated, and built a stable 12 V DC power supply covering transformer selection, rectification, filtering, and regulation. Practical bench testing, measurement, and troubleshooting of electrical systems.",
-      tech: ["Power Electronics", "Circuit Design", "LTspice"]
-    },
-    {
-      name: "Lowpass & Highpass Filter Design",
-      tag: "Analog Electronics",
-      year: "2024",
-      desc: "Designed and analyzed lowpass and highpass filters, covering frequency response, component selection, and verification.",
-      tech: ["Analog Design", "Filters", "Simulation"]
     }
   ],
 
