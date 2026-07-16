@@ -77,8 +77,7 @@ const PORTFOLIO = {
         "Wrote a React Native app to replace a Blynk interface for the robot, with cleaner UX and direct socket control.",
         "Prototyped an RFID attendance system that writes to Google Sheets; also diagnosed and refurbished eight smart power-monitoring units before they went back out to field sites.",
         "Dug into edge computing, 5G (CU/DU/RU split), MEC, and vector databases as part of the lab's broader R&D."
-      ],
-      letter: "certs/Industrial_Training_Letter_Asfaaq_Ahamed.pdf"
+      ]
     },
     {
       role: "Industrial Trainee, Electrical, Electronic & Air Navigation Engineering",
@@ -89,7 +88,8 @@ const PORTFOLIO = {
         "Studied surveillance technologies such as PSR, SSR, ADS-B, and ADS-C, plus HF/VHF/UHF communications and CPDLC.",
         "Studied airport illumination, cable types, insulation testing, and power distribution (transformers, SF6/vacuum breakers, surge arrestors, Buchholz relays).",
         "Learned airfield ground lighting (runway, taxiway, PAPI lights) operated via Constant Current Regulators (CCR)."
-      ]
+      ],
+      letter: "certs/Industrial_Training_Letter_Asfaaq_Ahamed.pdf"
     },
     {
       role: "AutoCAD Map Designer",
