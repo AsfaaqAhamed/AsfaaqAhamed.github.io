@@ -77,7 +77,8 @@ const PORTFOLIO = {
         "Wrote a React Native app to replace a Blynk interface for the robot, with cleaner UX and direct socket control.",
         "Prototyped an RFID attendance system that writes to Google Sheets; also diagnosed and refurbished eight smart power-monitoring units before they went back out to field sites.",
         "Dug into edge computing, 5G (CU/DU/RU split), MEC, and vector databases as part of the lab's broader R&D."
-      ]
+      ],
+      letter: "certs/Industrial_Training_Letter_Asfaaq_Ahamed.pdf"
     },
     {
       role: "Industrial Trainee, Electrical, Electronic & Air Navigation Engineering",
@@ -225,7 +226,8 @@ const PORTFOLIO = {
   certifications: [
     { name: "Foundations of Project Management", by: "University of Moratuwa (CODL)", year: "2025", file: "certs/Foundations_of_Project_Management.pdf" },
     { name: "AI/ML Engineer Stage 1 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Oct 2025", file: "certs/AIML_Engineer_Stage1.pdf" },
-    { name: "AI/ML Engineer Stage 2 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Aug 2025", file: "certs/AIML_Engineer_Stage2.pdf" }
+    { name: "AI/ML Engineer Stage 2 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Aug 2025", file: "certs/AIML_Engineer_Stage2.pdf" },
+    { name: "Project Scope and Schedule Management", by: "University of Moratuwa, Open Learning", year: "2025", file: "certs/Project_Scope_and_Schedule_Management_E-Certificate.pdf" }
   ],
 
   /* ---------- CO-CURRICULAR / LEADERSHIP ---------- */
