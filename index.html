@@ -601,7 +601,7 @@ const IC={
 // experience
 $('timeline').innerHTML = P.experience.map(e=>
   `<div class="tl-item reveal"><div class="role">${e.role}</div><div class="org">${e.org}</div>
-   <div class="period">${e.period}</div><ul>${e.points.map(p=>`<li>${p}</li>`).join('')}</ul>${e.letter?`<a class="cert-link" href="${e.letter}" target="_blank" rel="noopener">View Training Letter ↗</a>`:'}</div>`).join('');
+   <div class="period">${e.period}</div><ul>${e.points.map(p=>`<li>${p}</li>`).join('')}</ul>${e.letter?`<a class="cert-link" href="${e.letter}" target="_blank" rel="noopener">View Training Letter ↗</a>`:''}</div>`).join('');
 
 // projects (with optional demo / files / link buttons)
 $('projects-grid').innerHTML = P.projects.map(p=>{
