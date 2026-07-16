@@ -77,7 +77,8 @@ const PORTFOLIO = {
         "Wrote a React Native app to replace a Blynk interface for the robot, with cleaner UX and direct socket control.",
         "Prototyped an RFID attendance system that writes to Google Sheets; also diagnosed and refurbished eight smart power-monitoring units before they went back out to field sites.",
         "Dug into edge computing, 5G (CU/DU/RU split), MEC, and vector databases as part of the lab's broader R&D."
-      ]
+      ],
+      letter: "certs/SLT_Training_Completion_Letter_Asfaaq_Ahamed.pdf"
     },
     {
       role: "Industrial Trainee, Electrical, Electronic & Air Navigation Engineering",
