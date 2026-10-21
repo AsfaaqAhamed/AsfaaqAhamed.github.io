@@ -19,6 +19,7 @@ const PORTFOLIO = {
       "Embedded Systems & IoT",
       "Applied AI / Machine Learning",
       "Aviation Infrastructure",
+      "Process Automation",
       "Hardware × Software Engineer"
     ],
     location: "Addalaichenai, Sri Lanka",
@@ -32,10 +33,10 @@ const PORTFOLIO = {
   },
 
   /* ---------- ABOUT (short version, shown on the page) ---------- */
-  aboutShort: "I'm an Electrical & Electronic Engineer who builds things at the hardware-software boundary. My final-year project, SignJoy, is a sign language teaching device that runs completely offline on a Raspberry Pi 5, built for Sri Lankan classrooms with no reliable internet. Before that I was at SLT Digital Lab building IoT systems, and at Bandaranaike Airport learning how navigation and communications infrastructure actually holds together. I'm most interested in problems where the hardware and software have to solve something real.",
+  aboutShort: "I'm an Electrical & Electronic Engineer who builds things at the hardware-software boundary. My final-year project, SignJoy, is a sign language teaching device that runs completely offline on a Raspberry Pi 5, built for Sri Lankan classrooms with no reliable internet. At SLT Digital Lab I built IoT monitoring devices and a React Native control app, at Bandaranaike Airport I learned how navigation and communications infrastructure holds together, and most recently at IDP Worldwide International I managed marketing and sales and automated the workflows behind them. I'm most interested in problems where the hardware and software have to solve something real.",
 
   /* ---------- ABOUT (full version, kept for reference / longer use) ---------- */
-  about: "Electrical and Electronic Engineer with hands-on experience in embedded systems, IoT development, and aviation infrastructure. My final-year project, SignJoy, is an offline bilingual sign-language teaching unit for Sri Lankan primary classrooms built on a Raspberry Pi 5 with a Unity 3D avatar and a CNN-BiLSTM gesture recognition model trained on a custom 410-class dataset. My industrial training spans SLT Digital Lab, where I built ESP32-based monitoring devices, a self-balancing robot, and a React Native control app, and Bandaranaike International Airport, where I gained exposure to navigational aids, surveillance systems, and large-scale power distribution. I am motivated by practical engineering challenges with measurable real-world impact, and committed to growing my expertise across embedded design, automation, and applied AI.",
+  about: "Versatile Electrical and Electronic Engineer with hands-on experience in embedded systems, IoT development, aviation infrastructure, and operational automation. At SLT Digital Lab I developed ESP32-based monitoring devices and a React Native control application, and refurbished smart power-monitoring devices for field deployment; at IDP Worldwide International I managed marketing, sales, and workflow automation. I built SignJoy, an offline sign-language teaching platform running a CNN-BiLSTM model on Raspberry Pi 5. Skilled in practical engineering, PCB and circuit design, technical documentation, and applied AI development.",
 
   /* ---------- TECH LOGO STRIP (scrolling logos in hero) ----------
      Logos load from cdn.simpleicons.org. To add one, copy a line and
@@ -62,43 +63,55 @@ const PORTFOLIO = {
   stats: [
     { value: 410,  suffix: "+", label: "Class Custom ML Dataset" },
     { value: 8321, suffix: "",  label: "Training Video Samples" },
-    { value: 3,    suffix: "",  label: "Industrial Placements" },
-    { value: 7,    suffix: "+", label: "Engineering Projects" }
+    { value: 4,    suffix: "",  label: "Professional Roles" },
+    { value: 8,    suffix: "+", label: "Engineering Projects" }
   ],
 
   /* ---------- EXPERIENCE ---------- */
   experience: [
     {
-      role: "Industrial Trainee, Research & Development",
-      org: "SLT Digital Lab, Sri Lanka Telecom PLC, Colombo",
-      period: "Jun 2025 – Sep 2025 (12 weeks)",
+      role: "Manager, Marketing & Sales",
+      org: "IDP Worldwide International (PGC Education)",
+      period: "Apr 2026 – Oct 2026",
       points: [
-        "Built an ESP32 + GSM copper-line anti-theft monitor with SMS alerting and optocoupler isolation, and a self-balancing robot with live video streaming and voice-command control.",
-        "Wrote a React Native app to replace a Blynk interface for the robot, with cleaner UX and direct socket control.",
-        "Prototyped an RFID attendance system that writes to Google Sheets; also diagnosed and refurbished eight smart power-monitoring units before they went back out to field sites.",
-        "Dug into edge computing, 5G (CU/DU/RU split), MEC, and vector databases as part of the lab's broader R&D."
+        "Managed day-to-day marketing, sales, and operational activities, reporting directly to senior management.",
+        "Automated lead capture, follow-ups, and enquiry handling, speeding up response times and reducing manual workload.",
+        "Automated internal operational processes and drove the rollout of Standard Operating Procedures (SOPs) across marketing, sales, and operations.",
+        "Worked towards student enrolment targets through sales follow-up and marketing campaigns."
+      ]
+    },
+    {
+      role: "Assistant Electronic Engineer, Research & Development",
+      org: "SLT Digital Lab, Sri Lanka Telecom PLC, Colombo",
+      period: "Feb 2025 – Feb 2026",
+      points: [
+        "Designed and deployed a copper-line anti-theft monitor (ESP32, GSM, optocoupler array) with real-time SMS alerts.",
+        "Built a self-balancing robot with live video streaming and voice-command control; developed a React Native app to replace its Blynk-based interface.",
+        "Prototyped an RFID attendance system integrated with Google Sheets.",
+        "Diagnosed and refurbished 8 smart power-monitoring devices for field deployment.",
+        "Researched edge computing, 5G RAN architecture (CU/DU/RU), multi-access edge computing (MEC), and vector databases."
       ],
       letter: "certs/SLT_Training_Completion_Letter_Asfaaq_Ahamed.pdf"
     },
     {
-      role: "Industrial Trainee, Electrical, Electronic & Air Navigation Engineering",
-      org: "Bandaranaike International Airport, Katunayake",
-      period: "Jul 2024 – Sep 2024",
+      role: "Assistant Engineer, Electrical, Electronic & Air Navigation Engineering",
+      org: "Bandaranaike International Airport (BIA), Katunayake",
+      period: "Sep 2023 – Sep 2024",
       points: [
-        "Gained exposure to navigational aids including ILS, DVOR, DME, and NDB systems used in aircraft navigation.",
-        "Studied surveillance technologies such as PSR, SSR, ADS-B, and ADS-C, plus HF/VHF/UHF communications and CPDLC.",
-        "Studied airport illumination, cable types, insulation testing, and power distribution (transformers, SF6/vacuum breakers, surge arrestors, Buchholz relays).",
-        "Learned airfield ground lighting (runway, taxiway, PAPI lights) operated via Constant Current Regulators (CCR)."
+        "Studied air navigation aids (ILS, DVOR, DME, NDB) and surveillance systems (PSR, SSR, ADS-B, ADS-C).",
+        "Learned HF/VHF/UHF communication systems and CPDLC for pilot–controller communication.",
+        "Observed power distribution infrastructure (transformers, SF6/vacuum circuit breakers, surge arrestors, Buchholz relays) and cable insulation testing.",
+        "Studied airfield ground lighting (runway, taxiway, PAPI) driven by Constant Current Regulators (CCR), and X-ray baggage screening systems."
       ],
       letter: "certs/Industrial_Training_Letter_Asfaaq_Ahamed.pdf"
     },
     {
       role: "AutoCAD Map Designer",
-      org: "ESTEX (Private Limited) Engineering",
+      org: "ESTEX (Private) Limited Engineering",
       period: "Mar 2022 – Oct 2022",
       points: [
-        "Created AutoCAD engineering layout drawings for drainage and civil infrastructure projects.",
-        "Maintained project documentation and supported coordination between design and field teams."
+        "Produced AutoCAD technical drawings and engineering layouts.",
+        "Documented engineering plans and project deliverables."
       ]
     }
   ],
@@ -160,6 +173,13 @@ const PORTFOLIO = {
       link: ""
     },
     {
+      name: "12 V DC Power Supply Design",
+      tag: "Power Electronics",
+      year: "2023",
+      desc: "Designed, simulated, and built a stable 12 V DC supply covering transformer selection, rectification, filtering, and regulation, followed by bench testing and troubleshooting.",
+      tech: ["Power Electronics", "Rectification", "Voltage Regulation", "Simulation", "Bench Testing"]
+    },
+    {
       name: "Trolley Bed with Adjustable Legs",
       tag: "Design Project",
       year: "2023",
@@ -172,7 +192,7 @@ const PORTFOLIO = {
   skills: [
     {
       group: "Machine Learning & AI",
-      items: ["CNN", "Bidirectional LSTM", "Transformers", "TensorFlow", "PyTorch", "Keras", "scikit-learn", "OpenCV", "MediaPipe Holistic", "NLTK", "spaCy", "Edge ML (Raspberry Pi 5)", "Vosk (Offline Speech)"]
+      items: ["CNN", "Bidirectional LSTM", "Transformers", "TensorFlow", "PyTorch", "Keras", "scikit-learn", "OpenCV", "MediaPipe Holistic", "DeepFace", "NLTK", "spaCy", "Edge ML (Raspberry Pi 5)", "Vosk (Offline Speech)"]
     },
     {
       group: "Programming Languages",
@@ -196,11 +216,15 @@ const PORTFOLIO = {
     },
     {
       group: "Databases & Tools",
-      items: ["SQL", "Firebase", "MongoDB", "Git / GitHub", "VS Code"]
+      items: ["SQL", "Firebase", "MongoDB (Atlas Vector Search)", "Git / GitHub", "VS Code"]
     },
     {
       group: "Mobile & Web",
       items: ["React", "React Native (Expo)", "Unity"]
+    },
+    {
+      group: "Professional",
+      items: ["Technical Documentation", "SOP Development", "Process Automation", "Marketing & Sales Operations", "Teamwork"]
     }
   ],
 
@@ -228,7 +252,8 @@ const PORTFOLIO = {
     { name: "Foundations of Project Management", by: "University of Moratuwa (CODL)", year: "2025", file: "certs/Foundations_of_Project_Management.pdf" },
     { name: "AI/ML Engineer Stage 1 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Oct 2025", file: "certs/AIML_Engineer_Stage1.pdf" },
     { name: "AI/ML Engineer Stage 2 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "Aug 2025", file: "certs/AIML_Engineer_Stage2.pdf" },
-    { name: "Project Scope and Schedule Management", by: "University of Moratuwa, Open Learning", year: "2025", file: "certs/Project_Scope_and_Schedule_Management_E-Certificate.pdf" }
+    { name: "Project Scope and Schedule Management", by: "University of Moratuwa, Open Learning", year: "2025", file: "certs/Project_Scope_and_Schedule_Management_E-Certificate.pdf" },
+    { name: "AI/ML Engineer Stage 3 Certification", by: "SLIIT, Centre for Open & Distance Education", year: "", file: "" }
   ],
 
   /* ---------- CO-CURRICULAR / LEADERSHIP ---------- */
